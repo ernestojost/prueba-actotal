@@ -21,7 +21,7 @@
 
         <!-- Contenido principal -->
         <div id="main-content" class="d-flex h-auto justify-content-center mb-2 pb-2">
-            <div class="w-50">
+            <div id="data-entry" class="w-50">
                 <h2 class="text-center">Ingreso de Datos</h2>
                 <form class="mx-auto mt-5 d-block" action="includes/add-user.php" method="POST">
                     <div class="d-flex form-group justify-content-between">
@@ -46,7 +46,7 @@
                             <?= $_SESSION['complete'] ?>
                         </div>
                     <?php endif; ?>
-                    <button id="form-submit" type="submit" class="btn btn-primary mt-4 px-2 py-1 text-body float-right" onclick="addUser()">Guardar</button>
+                    <button id="form-submit" type="submit" class="btn btn-primary mt-4 px-2 py-1 text-body float-right">Guardar</button>
                 </form>
                 <?php deleteError(); ?>
             </div>
@@ -54,7 +54,7 @@
             <!-- Linea separatoria -->
             <div id="line" class="mt-4"></div>
 
-            <div class="w-50">
+            <div id="data-listing" class="w-50">
                 <h2 class="text-center">Listado de Datos</h2>
                 <div id="list-content" class="mx-auto mt-4 d-block overflow-auto">
 
